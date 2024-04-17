@@ -1,0 +1,66 @@
+a:link, a:hover, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+  }
+  body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    color:white;
+    font-weight:bold;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .mq05 {
+    color:black;
+    font-weight: bold;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:10px;
+  }
+  
+  .mq1 {
+    color:black;
+    font-weight: bold;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+  }
+  
+  .mq2 {
+    color:black;
+    font-weight: bold;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:35px;
+  }
+  
+  .mq3 {
+    color:black;
+    font-weight: bold;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:45px;
+  }
