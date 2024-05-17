@@ -169,7 +169,7 @@ nav a:active {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
+  align-content: center;
+  justify-content: center;
   row-gap: 50px;
 }
