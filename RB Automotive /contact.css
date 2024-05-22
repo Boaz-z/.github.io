@@ -1,0 +1,8 @@
+.boxicon {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}

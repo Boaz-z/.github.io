@@ -192,14 +192,15 @@ nav a:active {
   border-radius: 5px;
   border: 3px solid black;
   position: sticky;
-  top: 10px;
+  width: 5px;
+  height: 5px;
   background-color: white;
   color: white;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 5px;
   transition-duration: 0.4s;
 }
 
