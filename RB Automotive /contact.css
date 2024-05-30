@@ -5,6 +5,8 @@ input[type=text], select, textarea {
   border-radius: 40px;
   box-sizing:content-box;
   margin: 10px;
+  justify-content: center;
+  display: block;
 }
 
 input[type=submit]:hover {
@@ -13,13 +15,46 @@ input[type=submit]:hover {
   transition-duration: 0.75s;
 }
 
-.card {
-  border-radius: 25px;
-  border: 3px rgb(168, 168, 168);
-  background-color: rgb(168, 168, 168);
-  display: flex;
-  text-decoration: none;
+.message input[type=text] {
+  width: 100%;
+  height: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing:border-box;
+  margin: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.submit {
+  align-items: center;
+  justify-content: center;
+  display:block;
+  border-radius: 15px;
+  background: #a81b1b;
+  color: rgb(255, 255, 255);
+  width: 33%;
+  height: 50px;
   text-align: center;
-  color: grey;
-  flex-direction:column;
+  font-size: 1.5rem;
+  border-color: 1px solid #ccc;
+}
+
+.submit:hover {
+  filter: hue-rotate(5rad);
+  transition: all 3s ease;
+}
+.card {
+  margin: 0;
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  max-width: 100%;
 }
