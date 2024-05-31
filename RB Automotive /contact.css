@@ -41,8 +41,8 @@ input[type=submit]:hover {
 }
 
 .submit:hover {
-  filter: hue-rotate(5rad);
-  transition: all 3s ease;
+  filter: hue-rotate(300rad);
+  transition: all 5s ease;
 }
 .card {
   margin: 0;
