@@ -1,5 +1,5 @@
-input[type=text], select, textarea {
-  width: 100%;
+input[type=text], select { /*maakt de textboxes aan*/
+  width: 95%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 40px;
@@ -7,45 +7,62 @@ input[type=text], select, textarea {
   margin: 10px;
   justify-content: center;
   display: block;
+  height: 20px;
+  transition: height 0.65s;
 }
 
-input[type=submit]:hover {
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(204,0,0,1) 32%);
-  transition-duration: 0.75s;
+
+input[type=text]:hover, select:hover { /*effect wanneer je hovert*/
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,71,71,0.6418942577030813) 100%);
+  height: calc(20px * 1.55);
 }
 
-.message input[type=text] {
-  width: 100%;
-  height: 500px;
+textarea:hover { /*effect wanneer je hovert ALLEEN TEXTAREA*/
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,71,71,0.6418942577030813) 100%);
+}
+
+textarea { /*stijl voor groot textvlak (message us)*/
+  width: 95%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 40px;
   box-sizing:border-box;
   margin: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: height 0.65s, width 0.4s;
 }
 
-.submit {
-  align-items: center;
-  justify-content: center;
-  display:block;
+select { /*extra stijl voor select, zodat kleur en grootte even groot zijn als de rest van de textboxen*/
+  color:#6e6d6d;
+  font-size: 13px;
+}
+.submit { /*submit button*/
+  margin: auto;
+  display: block;
   border-radius: 15px;
   background: #a81b1b;
   color: rgb(255, 255, 255);
-  width: 33%;
+  width: 200px;
   height: 50px;
   text-align: center;
   font-size: 1.5rem;
   border-color: 1px solid #ccc;
+  transition: width 1.2s, height 1.2s;
 }
 
-.submit:hover {
-  filter: hue-rotate(300rad);
-  transition: all 5s ease;
+
+.submit:hover { /*submit hover effect met transitions*/
+  filter: hue-rotate(-1.0turn);
+  height: calc(50px * 1.2);
+  font-size: 2rem;
+  text-decoration:solid;
+  width: calc(200px * 1.2);
+  transition: all 2s;
 }
-.card {
-  margin: 0;
+
+.card { /*grote box card met alle textboxen er in*/
+  margin: 10%;
   font-family: -apple-system, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
