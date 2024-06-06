@@ -8,20 +8,18 @@ input[type=text], select { /*maakt de textboxes aan*/
   justify-content: center;
   display: block;
   height: 20px;
-  transition: height 0.65s;
+  transition: height 0.65s, filter 0.5s;
+  filter: drop-shadow(7.5px 5px 5px #00000031);
 }
 
 
 input[type=text]:hover, select:hover { /*effect wanneer je hovert*/
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,71,71,0.6418942577030813) 100%);
   height: calc(20px * 1.55);
+  filter: drop-shadow(7.5px 5px 5px #706666da);
 }
 
 textarea:hover { /*effect wanneer je hovert ALLEEN TEXTAREA*/
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,71,71,0.6418942577030813) 100%);
-  height: calc(125 * 1.5);
+    height: calc(125 * 1.5);
 }
 
 textarea { /*stijl voor groot textvlak (message us)*/
@@ -33,13 +31,15 @@ textarea { /*stijl voor groot textvlak (message us)*/
   box-sizing:border-box;
   margin: 10px;
   transition-duration: height 0.65s;
-  max-width: 98%;
-  min-width: 95%;
+  max-width: 98.5%;
+  min-width: 98.5%;
+  min-height: 150px;
 }
 
 select { /*extra stijl voor select, zodat kleur en grootte even groot zijn als de rest van de textboxen*/
   color:#6e6d6d;
   font-size: 13px;
+  width: 98.5%;
 }
 
 
@@ -56,6 +56,7 @@ select { /*extra stijl voor select, zodat kleur en grootte even groot zijn als d
   border: 1px solid #ced4da;
   border-radius: 30px;
   max-width: 100%;
+  filter: drop-shadow(15px 10px 10px #00000098);
 }
 
 input[type=submit] { /*submit button*/
