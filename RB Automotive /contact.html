@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="models.css">
+    <link rel="stylesheet" href="models.css"> <!--Alle stylesheets-->
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <div class="header"> <!--Header-->
         <a href="1index.html">
-            <img src="images/ERB.png">
+            <img src="images/ERB.png"> 
           </a>
       </div>
 
-    <nav class="navbar">
+    <nav class="navbar"><!--Universele navbar-->
         <ul>
             <li><a href="1index.html">Home</a></li>
             <li><a href="audi.html">Our Models</a></li>
@@ -23,13 +20,15 @@
         </ul>
 
     </nav>
-    <div class="card">
-        <label>First name</label>
-        <input type="text" placeholder="Your first name..">
-        <label>Last name</label>
-        <input type="text" placeholder="Your last name..">
+    <div class="card"> <!--Flexbox voor alle text inputs-->
+        <form action="contactthanks.html">
+        <label>First name</label><label style="color:red"> *</label> <!--Voornaam-->
+        <input type="text" placeholder="Your first name" required>
+        <label>Last name</label><label style="color:red"> *</label> <!--Achternaam-->
+        <input type="text" placeholder="Your last name" required>
         <label>Country</label>
-        <select>
+        <select> <!--Alle landen-->
+            <option>Kies een land</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -275,20 +274,19 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
             </select>
-        <label>Adress</label>
-        <input type="text" placeholder="Your adress..">
-        <label>Zipcode</label>
-        <input type="text" placeholder="Your zipcode..">
-        <label>E-mail adress</label>
-        <input type="text" placeholder="Your e-mail..">
-        <label>Give us a message</label>
-        <textarea type="text" placeholder="Message us.." class="message" rows="7"></textarea>
-        <div class="centerbutton">
-            <button class="submit" href="contactthanks.html">Submit</button>
+            <label>Adress</label> <!--Adres-->
+            <input type="text" placeholder="Your adress">
+            <label>Zipcode</label> <!--Postcode-->
+            <input type="text" placeholder="Your zipcode">
+            <label>E-mail adress</label><label style="color:red"> *</label> <!--E-mail adress-->
+            <input type="text" placeholder="Your e-mail" required>
+            <label>Give us a message</label><label style="color:red"> *</label> <!--Het bericht invullen-->
+            <textarea type="text" placeholder="Message us" class="message" rows="7" required></textarea>
+            <input type="submit" placeholder="submit" href="contactthanks.html"></form>
         </div>
     </div>
-        <script src="smooth-scrollbar.js"></script>
-        <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/b926a78176.js" crossorigin="anonymous"></script>
+        <script src="smooth-scrollbar.js"></script> <!--smooth scrollen javascript-->
+        <script src="script.js"></script> 
+    <script src="https://kit.fontawesome.com/b926a78176.js" crossorigin="anonymous"></script> <!--icoon-font-->
     </body>
 </html>

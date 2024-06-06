@@ -21,45 +21,27 @@ input[type=text]:hover, select:hover { /*effect wanneer je hovert*/
 textarea:hover { /*effect wanneer je hovert ALLEEN TEXTAREA*/
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,71,71,0.6418942577030813) 100%);
+  height: calc(125 * 1.5);
 }
 
 textarea { /*stijl voor groot textvlak (message us)*/
-  width: 95%;
+  width: 98%;
+  height: 125px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 40px;
+  border-radius: 27px;
   box-sizing:border-box;
   margin: 10px;
-  transition: height 0.65s, width 0.4s;
+  transition-duration: height 0.65s;
+  max-width: 98%;
+  min-width: 95%;
 }
 
 select { /*extra stijl voor select, zodat kleur en grootte even groot zijn als de rest van de textboxen*/
   color:#6e6d6d;
   font-size: 13px;
 }
-.submit { /*submit button*/
-  margin: auto;
-  display: block;
-  border-radius: 15px;
-  background: #a81b1b;
-  color: rgb(255, 255, 255);
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  font-size: 1.5rem;
-  border-color: 1px solid #ccc;
-  transition: width 1.2s, height 1.2s;
-}
 
-
-.submit:hover { /*submit hover effect met transitions*/
-  filter: hue-rotate(-1.0turn);
-  height: calc(50px * 1.2);
-  font-size: 2rem;
-  text-decoration:solid;
-  width: calc(200px * 1.2);
-  transition: all 2s;
-}
 
 .card { /*grote box card met alle textboxen er in*/
   margin: 10%;
@@ -74,4 +56,27 @@ select { /*extra stijl voor select, zodat kleur en grootte even groot zijn als d
   border: 1px solid #ced4da;
   border-radius: 30px;
   max-width: 100%;
+}
+
+input[type=submit] { /*submit button*/
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+  background: #a81b1b;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-color: 1px solid #ccc;
+  transition: width 1.2s, height 1.2s;
+}
+
+input[type=submit]:hover { /*submit hover effect met transitions*/
+  filter: hue-rotate(-1.0turn);
+  height: calc(50px * 1.2);
+  font-size: 2rem;
+  text-decoration:solid;
+  width: calc(200px * 1.2);
+  transition: all 2s;
 }
