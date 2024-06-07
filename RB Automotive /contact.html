@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="models.css"> <!--Alle stylesheets-->
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="BoazCss.css">
 </head>
 <body>
     <div class="header"> <!--Header-->
@@ -12,21 +12,34 @@
           </a>
       </div>
 
-    <nav class="navbar"><!--Universele navbar-->
+      <nav> <!--Universele Navbar-->
         <ul>
-            <li><a href="1index.html">Home</a></li>
-            <li><a href="audi.html">Our Models</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Cars</a>
+                <div class="dropdown-content">
+                    <a href="#">Lamborghini</a>
+                    <a href="#">Ferrari</a>
+                    <a href="#">Porsche</a>
+                    <a href="#">McLaren</a>
+                    <a href="#">Brabus</a>
+                </div>
+            </li>
+            <li><a href="#">About</a></li>
+            <input class="search" type="text" placeholder="Search">
+            <button class="fa-solid fa-magnifying-glass"></button>
         </ul>
+    </nav>
 
     </nav>
     <div class="card"> <!--Flexbox voor alle text inputs-->
         <form action="contactthanks.html">
         <label>First name</label><label style="color:red"> *</label> <!--Voornaam-->
-        <input type="text" placeholder="Your first name" required>
+        <input type="text" placeholder="Your first name" class="inputtext" required>
         <label>Last name</label><label style="color:red"> *</label> <!--Achternaam-->
-        <input type="text" placeholder="Your last name" required>
+        <input type="text" placeholder="Your last name" class="inputtext" required>
         <label>Country</label>
-        <select> <!--Alle landen-->
+        <select class="select"> <!--Alle landen-->
             <option>Kies een land</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
@@ -274,13 +287,13 @@
             <option value="Zimbabwe">Zimbabwe</option>
             </select>
             <label>Adress</label> <!--Adres-->
-            <input type="text" placeholder="Your adress">
+            <input type="text" placeholder="Your adress" class="inputtext">
             <label>Zipcode</label> <!--Postcode-->
-            <input type="text" placeholder="Your zipcode">
+            <input type="text" placeholder="Your zipcode" class="inputtext">
             <label>E-mail adress</label><label style="color:red"> *</label> <!--E-mail adress-->
-            <input type="text" placeholder="Your e-mail" required>
+            <input type="text" placeholder="Your e-mail" class="inputtext" required>
             <label>Give us a message</label><label style="color:red"> *</label> <!--Het bericht invullen-->
-            <textarea type="text" placeholder="Message us" class="message" rows="7" required></textarea>
+            <textarea type="text" placeholder="Message us" rows="7" class="textarea" required></textarea>
             <input type="submit" placeholder="submit" href="contactthanks.html"></form>
         </div>
     </div>
